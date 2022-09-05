@@ -3,7 +3,7 @@ This project is designed to help you make your own projects that interact with t
 <a href="https://sandnex.com">https://sandnex.com</a>
 <a href="https://t.me/sandnex">Support</a>
 
-#### Installation: **`npm install -s node-binance-api`**
+#### Installation: *`npm install -s node-sandnex-api`*
 [![npm install node-binance-api](https://api-docs.sandnex.com/images/sand-logo-0d9fa8ee.png)](https://npmjs.org/package/node-sandnex-api)
 
 #### Getting started
