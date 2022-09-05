@@ -1,0 +1,23 @@
+{
+  "name": "node-sandnex-api",
+  "version": "1.0.0",
+  "description": "Make your own projects that interact with the Sandnex API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandnex/node-sandnex-api.git"
+  },
+  "keywords": [
+    "sandnex",
+    "node-sandnex"
+  ],
+  "author": "sandnex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandnex/node-sandnex-api/issues"
+  },
+  "homepage": "https://github.com/sandnex/node-sandnex-api#readme"
+}
