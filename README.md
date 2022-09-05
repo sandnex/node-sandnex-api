@@ -1,6 +1,6 @@
 # node-sandnex-api
 This project is designed to help you make your own projects that interact with the Sandnex API.
-<a href="https://sandnex.com">https://sandnex.com</a>
+<a href="https://sandnex.com">[https://api-doc.sandnex.com](https://api-docs.sandnex.com/)</a>&amp;
 <a href="https://t.me/sandnex">Support</a>
 
 #### Installation: *`npm install -s node-sandnex-api`*
