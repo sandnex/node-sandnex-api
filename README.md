@@ -16,7 +16,7 @@ const sandnex = new Sandnex().options({
 });
 ```
 
-## Binance API (Spot Trading)
+## Sandnex API (Spot)
 
 ```javascript
 sandnex.balance((error, balances) => {
