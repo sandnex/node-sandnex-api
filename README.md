@@ -16,6 +16,8 @@ const sandnex = new Sandnex().options({
 });
 ```
 
+## Binance API (Spot Trading)
+
 ```javascript
 sandnex.balance((error, balances) => {
   if ( error ) return console.error(error);
@@ -23,3 +25,4 @@ sandnex.balance((error, balances) => {
   console.info("ETH balance: ", balances.ETH.available);
 });
 ```
+
