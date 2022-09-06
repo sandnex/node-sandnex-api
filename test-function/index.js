@@ -9,12 +9,12 @@ const sandnex = new Sandnex().options({
 // let buy_order = sandnex.buy("ETHUSDT", quantity, price);
 // console.log(buy_order)
 
-let pair = sandnex.pair();
-Promise.all([pair]).then((values) => {
-    console.log(values[0]);
-});
+// let pair = sandnex.pair();
+// Promise.all([pair]).then((values) => {
+//     console.log(values[0]);
+// });
 
 
 
-// let balance = sandnex.balance();
-// console.log(balance)
+let balance = sandnex.balance();
+console.log(balance)

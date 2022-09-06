@@ -31,3 +31,20 @@ let balance = sandnex.balance();
 ```
 </details>
 
+#### Getting list of current pairs
+```javascript
+let pair = sandnex.pair();
+Promise.all([pair]).then((values) => {
+    console.log(values[0]);
+});
+```
+
+<details>
+ <summary>View Response</summary>
+
+```js
+{ ticker_id: 'BTC_USDT', base: 'BTC', target: 'USDT' }
+
+```
+</details>
+
