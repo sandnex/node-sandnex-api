@@ -6,9 +6,10 @@ This project is designed to help you make your own projects that interact with t
 <a href="https://www.npmjs.com/package/node-sandnex-api">npm package</a>
 
 ##### Installation: `npm install -s node-sandnex-api
+[![npm install node-binance-api](https://api-docs.sandnex.com/images/sand-logo-0d9fa8ee.png)](https://npmjs.org/package/node-sandnex-api)
+<br>
 [![NPM](https://nodei.co/npm/node-sandnex-api.png?compact=true)](https://npmjs.org/package/node-sandnex-api)
 `
-[![npm install node-binance-api](https://api-docs.sandnex.com/images/sand-logo-0d9fa8ee.png)](https://npmjs.org/package/node-sandnex-api)
 
 #### Getting started
 ```javascript
