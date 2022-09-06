@@ -20,10 +20,6 @@ const sandnex = new Sandnex().options({
 
 #### Getting list of current balances
 ```javascript
-sandnex.balance((error, balances) => {
-  if ( error ) return console.error(error);
-  console.info("balances()", balances);
-  console.info("ETH balance: ", balances.ETH.available);
-});
+sandnex.balance();
 ```
 
