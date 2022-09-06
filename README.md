@@ -75,8 +75,8 @@ console.log(buy_order)
 #### Getting order Limit Sell
 ```javascript
 let quantity = 1, price = 0.069;
-let buy_order = sandnex.sell("ETHUSDT", quantity, price);
-console.log(buy_order)
+let sell_order = sandnex.sell("ETHUSDT", quantity, price);
+console.log(sell_order)
 ```
 
 <details>
