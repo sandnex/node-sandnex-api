@@ -1,6 +1,6 @@
 {
   "name": "node-sandnex-api",
-  "version": "1.0.0",
+  "version": "1.0.41",
   "description": "Make your own projects that interact with the Sandnex API.",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/sandnex/node-sandnex-api/issues"
   },
-  "homepage": "https://github.com/sandnex/node-sandnex-api#readme"
+  "homepage": "https://github.com/sandnex/node-sandnex-api#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "request": "^2.88.2"
+  }
 }
