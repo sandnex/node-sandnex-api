@@ -26,12 +26,11 @@ let balance = sandnex.balance();
  <summary>View Response</summary>
 
 ```js
-{ ticker_id: 'BTC_USDT', base: 'BTC', target: 'USDT' }
-
+{ status: true,result : [ ticker_id: 'BTC_USDT', base: 'BTC', target: 'USDT'] }
 ```
 </details>
 
-#### Getting list of current pairs
+#### Current pairs
 ```javascript
 let pair = sandnex.pair();
 Promise.all([pair]).then((values) => {
@@ -43,13 +42,12 @@ Promise.all([pair]).then((values) => {
  <summary>View Response</summary>
 
 ```js
-{ ticker_id: 'BTC_USDT', base: 'BTC', target: 'USDT' }
-
+{ status: true,result : [ ticker_id: 'BTC_USDT', base: 'BTC', target: 'USDT'] }
 ```
 </details>
 
 
-#### Getting order Limit Buy
+#### Order Limit Buy
 ```javascript
 let quantity = 1, price = 0.069;
 let buy_order = sandnex.buy("ETHUSDT", quantity, price);
@@ -62,17 +60,18 @@ console.log(buy_order)
 ```js
 {
   status: true,
-  pair: 'ETHUSDT',
-  quantity: 1,
-  price: 0.069,
-  result: 0.069
+  result : [
+    pair: 'ETHUSDT',
+    quantity: 1,
+    price: 0.069,
+    result: 0.069,
+  ]
 }
-
 ```
 </details>
 
 
-#### Getting order Limit Sell
+#### Order Limit Sell
 ```javascript
 let quantity = 1, price = 0.069;
 let sell_order = sandnex.sell("ETHUSDT", quantity, price);
@@ -85,12 +84,52 @@ console.log(sell_order)
 ```js
 {
   status: true,
-  pair: 'ETHUSDT',
-  quantity: 1,
-  price: 0.069,
-  result: 0.069
+  result : [
+    pair: 'ETHUSDT',
+    quantity: 1,
+    price: 0.069,
+    result: 0.069,
+  ]
 }
+```
+</details>
 
+
+#### Cancel Order
+```javascript
+let orderid = 1100000000,
+let cancel = sandnex.cancel("ETHUSDT", orderid);
+console.log(cancel)
+```
+
+<details>
+ <summary>View Response</summary>
+
+```js
+{
+  status: true,
+  pair: 'ETHUSDT',
+  orderid : 100000000,
+  result : []
+}
+```
+</details>
+
+#### Cancel All Order
+```javascript
+let cancel_all = sandnex.cancelAll("ETHUSDT");
+console.log(cancel_all)
+```
+
+<details>
+ <summary>View Response</summary>
+
+```js
+{
+  status: true,
+  pair: 'ETHUSDT',
+  result : []
+}
 ```
 </details>
 
