@@ -1,6 +1,6 @@
 {
   "name": "node-sandnex-api",
-  "version": "1.0.456",
+  "version": "1.0.466",
   "description": "Make your own projects that interact with the Sandnex API.",
   "main": "index.js",
   "scripts": {
