@@ -39,6 +39,10 @@ let Sandnex = class Sandnex {
     cancelAll (pair) {
         return { status  : true,pair : pair}
     }
+
+    depth (pair) {
+        return { status  : true,result : [{ pair : pair}]}
+    }
     
     async pair () {
         try {

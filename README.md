@@ -48,6 +48,40 @@ Promise.all([pair]).then((values) => {
 </details>
 
 
+#### Get market depth for a symbol
+```javascript
+let depth = sandnex.depth("ETHUSDT");
+console.log(depth)
+```
+
+<details>
+ <summary>View Response</summary>
+
+```js
+{
+  status: true,
+  result : [
+    bids: [
+      '0.00022997': '49.00000000',
+      '0.00022867': '11.00000000',
+      '0.00022865': '1149.00000000',
+      '0.00022810': '20.00000000',
+      '0.00022800': '1000.00000000',
+      '0.00022777': '1350.00000000',
+    ],
+    asks : [
+      '0.00022999': '32.00000000',
+      '0.00023086': '583.00000000',
+      '0.00023095': '1154.00000000',
+      '0.00023119': '781.00000000',
+      '0.00023120': '3401.00000000',
+      '0.00023180': '4889.00000000',
+    ],
+  ]
+}
+```
+</details>
+
 #### Order Limit Buy
 ```javascript
 let quantity = 1, price = 0.069;
