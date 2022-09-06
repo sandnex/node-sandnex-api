@@ -5,13 +5,19 @@ This project is designed to help you make your own projects that interact with t
 <a href="https://t.me/sandnex">Support</a> &amp;
 <a href="https://www.npmjs.com/package/node-sandnex-api">npm package</a>
 
-##### Installation: `npm install -s node-sandnex-api
+
 [![npm install node-binance-api](https://api-docs.sandnex.com/images/sand-logo-0d9fa8ee.png)](https://npmjs.org/package/node-sandnex-api)
 <br>
 [![NPM](https://nodei.co/npm/node-sandnex-api.png?compact=true)](https://npmjs.org/package/node-sandnex-api)
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/sandnex/node-sandnex-api.svg?maxAge=2400&labelColor=333&label=🟣%20updated)](#) [![Monthly Downloads](https://img.shields.io/npm/dm/node-sandnex-api.svg?labelColor=29B6F6&color=3D5AFE&label=downloads&logo=bitcoin-lightning)](https://npm-stat.com/charts.html?package=node-sandnex-api&from=2017-07-01&to=2020-07-01) 
 [![sandnex on Twitter](https://img.shields.io/twitter/follow/Sandnex.svg?style=social)](https://twitter.com/Sandnex)
+
+
+#### Installation :
+```javascript
+npm install -s node-sandnex-api
+```
 
 #### Getting started
 ```javascript
