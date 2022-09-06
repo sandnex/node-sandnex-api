@@ -1,8 +1,8 @@
 const Sandnex = require('node-sandnex-api');
 
 const sandnex = new Sandnex().options({
-    APIKEY : '<test>',
-    APISECRET : '<test>'
+    api_key : '<test>',
+    secret_key : '<test>'
 });
 
 // let quantity = 1, price = 0.069;

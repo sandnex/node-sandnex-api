@@ -12,8 +12,8 @@ This project is designed to help you make your own projects that interact with t
 ```javascript
 const Sandnex = require('node-sandnex-api');
 const sandnex = new Sandnex().options({
-  APIKEY: '<key>',
-  APISECRET: '<secret>'
+  api_key: '<key>',
+  secret_key: '<secret>'
 });
 ```
 
@@ -22,12 +22,13 @@ const sandnex = new Sandnex().options({
 #### Getting list of current balances
 ```javascript
 let balance = sandnex.balance();
+console.log(balance)
 ```
 <details>
  <summary>View Response</summary>
 
 ```js
-{ status: true,result : [ ticker_id: 'BTC_USDT', base: 'BTC', target: 'USDT'] }
+{ status: true,result : [ { ticker_id: 'BTC_USDT', base: 'BTC', target: 'USDT' }] }
 ```
 </details>
 
@@ -43,7 +44,7 @@ Promise.all([pair]).then((values) => {
  <summary>View Response</summary>
 
 ```js
-{ status: true,result : [ ticker_id: 'BTC_USDT', base: 'BTC', target: 'USDT'] }
+{ status: true,result : [ { ticker_id: 'BTC_USDT', base: 'BTC', target: 'USDT' }] }
 ```
 </details>
 
@@ -60,7 +61,7 @@ console.log(depth)
 ```js
 {
   status: true,
-  result : [
+  result : [{
     bids: [
       '0.00022997': '49.00000000',
       '0.00022867': '11.00000000',
@@ -77,7 +78,7 @@ console.log(depth)
       '0.00023120': '3401.00000000',
       '0.00023180': '4889.00000000',
     ],
-  ]
+  }]
 }
 ```
 </details>
@@ -96,10 +97,13 @@ console.log(buy_order)
 {
   status: true,
   result : [
-    pair: 'ETHUSDT',
-    quantity: 1,
-    price: 0.069,
-    result: 0.069,
+    {
+      pair: 'ETHUSDT',
+      quantity: 1,
+      price: 0.069,
+      result: 0.069,
+    }
+    
   ]
 }
 ```
@@ -120,10 +124,12 @@ console.log(sell_order)
 {
   status: true,
   result : [
-    pair: 'ETHUSDT',
-    quantity: 1,
-    price: 0.069,
-    result: 0.069,
+    {
+      pair: 'ETHUSDT',
+      quantity: 1,
+      price: 0.069,
+      result: 0.069,
+    }
   ]
 }
 ```

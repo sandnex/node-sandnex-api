@@ -7,13 +7,11 @@ const base_url = 'https://api.sandnex.com/'
 let Sandnex = class Sandnex {
 
     constructor() {
-        this.okd = 'easy';
+        this.status = true;
     }
     options(options = {}) {
-        this.api_key = options.APIKEY;
-        this.api_secret = options.APISECRET;
-        // this.okd = 'aaaaaaaa';
-        // console.log(api_key);
+        this.api_key = options.api_key;
+        this.api_secret = options.api_secret;
 
         return { status : true,api_key  : this.api_key ,api_secret : this.api_secret,balance : this.balance,buy : this.buy,sell : this.sell,pair : this.pair,cancel : this.cancel,cancelAll : this.cancelAll,depth : this.depth}
     }
