@@ -48,3 +48,32 @@ Promise.all([pair]).then((values) => {
 ```
 </details>
 
+
+#### Getting list of current pairs
+```javascript
+let quantity = 1, price = 0.069;
+let buy_order = sandnex.buy("ETHUSDT", quantity, price);
+console.log(buy_order)
+```
+
+<details>
+ <summary>View Response</summary>
+
+```js
+{
+  status: true,
+  pair: 'ETHUSDT',
+  quantity: 1,
+  price: 0.069,
+  result: 0.069
+}
+
+```
+</details>
+
+
+
+
+
+
+

@@ -5,9 +5,9 @@ const sandnex = new Sandnex().options({
     APISECRET : '<test>'
 });
 
-// let quantity = 1, price = 0.069;
-// let buy_order = sandnex.buy("ETHUSDT", quantity, price);
-// console.log(buy_order)
+let quantity = 1, price = 0.069;
+let buy_order = sandnex.buy("ETHUSDT", quantity, price);
+console.log(buy_order)
 
 // let pair = sandnex.pair();
 // Promise.all([pair]).then((values) => {
@@ -16,5 +16,5 @@ const sandnex = new Sandnex().options({
 
 
 
-let balance = sandnex.balance();
-console.log(balance)
+// let balance = sandnex.balance();
+// console.log(balance)
