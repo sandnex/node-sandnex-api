@@ -20,6 +20,14 @@ const sandnex = new Sandnex().options({
 
 #### Getting list of current balances
 ```javascript
-sandnex.balance();
+let balance = sandnex.balance();
 ```
+<details>
+ <summary>View Response</summary>
+
+```js
+{ ticker_id: 'BTC_USDT', base: 'BTC', target: 'USDT' }
+
+```
+</details>
 
