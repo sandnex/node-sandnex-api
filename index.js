@@ -15,7 +15,7 @@ let Sandnex = class Sandnex {
         // this.okd = 'aaaaaaaa';
         // console.log(api_key);
 
-        return { status : true,api_key  : this.api_key ,api_secret : this.api_secret,balance : this.balance,buy : this.buy,sell : this.sell,pair : this.pair}
+        return { status : true,api_key  : this.api_key ,api_secret : this.api_secret,balance : this.balance,buy : this.buy,sell : this.sell,pair : this.pair,cancel : this.cancel,cancelAll : this.cancelAll,depth : this.depth}
     }
 
     balance(symbol = null) {
