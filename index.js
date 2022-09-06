@@ -42,14 +42,27 @@ let Sandnex = class Sandnex {
         return { status  : true,result : [{ pair : pair}]}
     }
     
-    async pair () {
-        try {
-            const response = await axios.get(base_url+'/pairs');
-            return response.data;
-            
-        } catch (error) {
-            console.error(error);
+    async pair (symbol = null) {
+
+        if(symbol == null)
+        {
+            try {
+                const response = await axios.get(base_url+'/pairs');
+                return response.data;
+                
+            } catch (error) {
+                console.error(error);
+            }
+        }else{
+            try {
+                const response = await axios.get(base_url+'/pairs?symbol='+symbol);
+                return response.data;
+                
+            } catch (error) {
+                console.error(error);
+            }
         }
+        
 
     }
 

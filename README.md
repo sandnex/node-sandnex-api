@@ -59,6 +59,22 @@ Promise.all([pair]).then((values) => {
 ```
 </details>
 
+#### Current pairs with Symbol
+```javascript
+let pair = sandnex.pair('ETHUSDT');
+Promise.all([pair]).then((values) => {
+    console.log(values[0]);
+});
+```
+
+<details>
+ <summary>View Response</summary>
+
+```js
+{ status: true,result : { ticker_id: '11111', base: '111', target: '111' } }
+```
+</details>
+
 
 #### Get market depth for a symbol
 ```javascript
