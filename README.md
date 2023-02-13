@@ -275,14 +275,15 @@ console.log(assets)
   ]
 }
 ```
+</details>
 
 #### Asset pair symbol
-In depth details on crypto currencies available on the exchange
+
 ```javascript
 let asset = sandnex.asset('XRP_BTC');
 console.log(asset)
 ```
-</details><details>
+<details>
  <summary>View Response</summary>
 
 ```js
