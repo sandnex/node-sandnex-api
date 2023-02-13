@@ -41,6 +41,36 @@ let Sandnex = class Sandnex {
     depth (pair) {
         return { status  : true,result : [{ pair : pair}]}
     }
+    async cancel (symbol,orderid) {
+        if(symbol !== undefined) {
+            try {
+                let from = {
+                    symbol : symbol,
+                    orderid : orderid
+                }
+                const response = await axios.post(base_url+'/cancel', from);
+                return response.data;
+                
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    }
+
+    async cancelAll (symbol) {
+        if(symbol!== undefined) {
+            try {
+                let from = {
+                    symbol : symbol
+                }
+                const response = await axios.post(base_url+'/cancel_all', from);
+                return response.data;
+                
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    }
     
     async pair (symbol = null) {
 
@@ -64,6 +94,27 @@ let Sandnex = class Sandnex {
         }
         
 
+    }
+
+    async assets () {
+        try {
+            const response = await axios.get(base_url+'/assets');
+            return response.data;
+            
+        } catch (error) {
+            console.error(error);
+        }
+    }
+    async asset (symbol) {
+        if (symbol != null) {
+            try {
+                const response = await axios.get(base_url+'/asset?symbol='+symbol);
+                return response.data;
+                
+            } catch (error) {
+                console.error(error);
+            }
+        }
     }
 
 }

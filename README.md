@@ -202,6 +202,110 @@ console.log(cancel_all)
 </details>
 
 
+#### Assets 
+In depth details on crypto currencies available on the exchange
+```javascript
+let assets = sandnex.assets();
+console.log(assets)
+```
+
+<details>
+ <summary>View Response</summary>
+
+```js
+{
+  status: true,
+  result : [
+    {
+      "trading_pairs": "XRP_BTC",
+      "last_price": 0.0000203,
+      "lowest_ask": 0.0000213,
+      "highest_bid": 0.0000202,
+      "base_volume": 350700,
+      "quote_volume": 7.139649999999999,
+      "price_change_percent_24h": -0.49019607843137253,
+      "highest_price_24h": 0.0000204,
+      "lowest_price_24h": 0.0000203
+    },
+    {
+    "trading_pairs": "LTC_BTC",
+    "last_price": 0.00469,
+    "lowest_ask": 0.00479,
+    "highest_bid": 0.00469,
+    "base_volume": 592.88,
+    "quote_volume": 2.7840513999999996,
+    "price_change_percent_24h": -0.635593220338983,
+    "highest_price_24h": 0.00471,
+    "lowest_price_24h": 0.00466
+    }
+  ]
+}
+```
+</details>
+
+<details>
+ <summary>View Response</summary>
+
+```js
+{
+  status: true,
+  result : [
+    {
+      "trading_pairs": "XRP_BTC",
+      "last_price": 0.0000203,
+      "lowest_ask": 0.0000213,
+      "highest_bid": 0.0000202,
+      "base_volume": 350700,
+      "quote_volume": 7.139649999999999,
+      "price_change_percent_24h": -0.49019607843137253,
+      "highest_price_24h": 0.0000204,
+      "lowest_price_24h": 0.0000203
+    },
+    {
+    "trading_pairs": "LTC_BTC",
+    "last_price": 0.00469,
+    "lowest_ask": 0.00479,
+    "highest_bid": 0.00469,
+    "base_volume": 592.88,
+    "quote_volume": 2.7840513999999996,
+    "price_change_percent_24h": -0.635593220338983,
+    "highest_price_24h": 0.00471,
+    "lowest_price_24h": 0.00466
+    }
+  ]
+}
+```
+
+#### Asset pair symbol
+In depth details on crypto currencies available on the exchange
+```javascript
+let asset = sandnex.asset('XRP_BTC');
+console.log(asset)
+```
+</details><details>
+ <summary>View Response</summary>
+
+```js
+{
+  status: true,
+  pair : 'XRP_BTC'
+  result : [
+    {
+      "trading_pairs": "XRP_BTC",
+      "last_price": 0.0000203,
+      "lowest_ask": 0.0000213,
+      "highest_bid": 0.0000202,
+      "base_volume": 350700,
+      "quote_volume": 7.139649999999999,
+      "price_change_percent_24h": -0.49019607843137253,
+      "highest_price_24h": 0.0000204,
+      "lowest_price_24h": 0.0000203
+    }
+  ]
+}
+```
+</details>
+
 
 
 
