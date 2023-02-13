@@ -61,7 +61,7 @@ Promise.all([pair]).then((values) => {
 
 #### Current pairs with Symbol
 ```javascript
-let pair = sandnex.pair('ETHUSDT');
+let pair = sandnex.pair('ETH_USDT');
 Promise.all([pair]).then((values) => {
     console.log(values[0]);
 });
@@ -78,7 +78,7 @@ Promise.all([pair]).then((values) => {
 
 #### Get market depth for a symbol
 ```javascript
-let depth = sandnex.depth("ETHUSDT");
+let depth = sandnex.depth("ETH_USDT");
 console.log(depth)
 ```
 
@@ -113,7 +113,7 @@ console.log(depth)
 #### Order Limit Buy
 ```javascript
 let quantity = 1, price = 0.069;
-let buy_order = sandnex.buy("ETHUSDT", quantity, price);
+let buy_order = sandnex.buy("ETH_USDT", quantity, price);
 console.log(buy_order)
 ```
 
@@ -140,7 +140,7 @@ console.log(buy_order)
 #### Order Limit Sell
 ```javascript
 let quantity = 1, price = 0.069;
-let sell_order = sandnex.sell("ETHUSDT", quantity, price);
+let sell_order = sandnex.sell("ETH_USDT", quantity, price);
 console.log(sell_order)
 ```
 
@@ -166,7 +166,7 @@ console.log(sell_order)
 #### Cancel Order
 ```javascript
 let orderid = 1100000000,
-let cancel = sandnex.cancel("ETHUSDT", orderid);
+let cancel = sandnex.cancel("ETH_USDT", orderid);
 console.log(cancel)
 ```
 
@@ -185,7 +185,7 @@ console.log(cancel)
 
 #### Cancel All Order
 ```javascript
-let cancel_all = sandnex.cancelAll("ETHUSDT");
+let cancel_all = sandnex.cancelAll("ETH_USDT");
 console.log(cancel_all)
 ```
 
@@ -277,10 +277,10 @@ console.log(assets)
 ```
 </details>
 
-#### Asset pair symbol
+#### Asset pair with Symbol
 
 ```javascript
-let asset = sandnex.asset('XRP_BTC');
+let asset = sandnex.asset('ETH_USDT');
 console.log(asset)
 ```
 <details>
@@ -290,19 +290,22 @@ console.log(asset)
 {
   status: true,
   pair : 'XRP_BTC'
-  result : [
-    {
-      "trading_pairs": "XRP_BTC",
-      "last_price": 0.0000203,
-      "lowest_ask": 0.0000213,
-      "highest_bid": 0.0000202,
-      "base_volume": 350700,
-      "quote_volume": 7.139649999999999,
-      "price_change_percent_24h": -0.49019607843137253,
-      "highest_price_24h": 0.0000204,
-      "lowest_price_24h": 0.0000203
-    }
-  ]
+  result : 
+  {
+    "ticker_id": "ETH_USDT",
+    "ticker_name": "ETH/USDT",
+    "type": "spot",
+    "base_currency": "USDT",
+    "target_currency": "ETH",
+    "last_price": 0,
+    "base_volume": 0,
+    "target_volume": 0,
+    "bid": 0,
+    "ask": 0,
+    "high": 0,
+    "low": 0,
+    "change_percent": 0
+  }
 }
 ```
 </details>

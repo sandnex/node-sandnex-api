@@ -22,6 +22,7 @@
   "homepage": "https://github.com/sandnex/node-sandnex-api#readme",
   "dependencies": {
     "axios": "^0.27.2",
+    "node-sandnex-api": "^1.0.468",
     "request": "^2.88.2"
   }
 }
